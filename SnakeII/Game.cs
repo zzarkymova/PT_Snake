@@ -7,12 +7,18 @@ using System.Threading.Tasks;
 
 namespace SnakeII
 {
+    /// <summary>
+    /// create a game in which worm, wall, food created
+    /// </summary>
     public class Game
     {
         public Worm worm = null;
         public Wall wall = null;
         public Food food = null;
-
+        /// <summary>
+        /// check if worm can eat the food by method 'Equals'. If it is true, add points to the body
+        /// </summary>
+        /// <returns></returns>
         public bool CanEat()
         {
             if (worm.points[0].Equals(food.points[0]))
@@ -23,7 +29,9 @@ namespace SnakeII
             }
             return false;
         }
-
+        /// <summary>
+        /// starting the game by creating snake, wall, food
+        /// </summary>
         public void Start()
         {
             worm = new Worm();
@@ -35,7 +43,7 @@ namespace SnakeII
             food.Draw();
             wall.Draw();
 
-            
+            // snake will move with the timer by reading commands from the console
             Thread t = new Thread(new ThreadStart(worm.Move));
             t.Start();
             while (true)

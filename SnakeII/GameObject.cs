@@ -21,6 +21,9 @@ namespace SnakeII
                 Console.Write(' ');
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
         public void Draw()
         {
             for (int i = 0; i < points.Count; ++i)
@@ -29,7 +32,9 @@ namespace SnakeII
                 Console.Write(sign);
             }
         }
-
+        /// <summary>
+        /// saving the game with XML Serialization
+        /// </summary>
         public void Save()
         {
             XmlSerializer xs = new XmlSerializer(this.GetType());

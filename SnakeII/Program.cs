@@ -10,8 +10,10 @@ namespace SnakeII
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.Black;
             Game g = new Game();
             g.Start();
+
         }
     }
 }

@@ -10,7 +10,7 @@ namespace SnakeII
     {
         public Wall()
         {
-  //          Console.BackgroundColor = ConsoleColor.Red;
+            Console.BackgroundColor = ConsoleColor.Red;
             this.sign = ':';
             this.points.Add(new Point(2, 4));
             this.points.Add(new Point(2, 5));

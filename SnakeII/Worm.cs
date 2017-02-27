@@ -20,7 +20,7 @@ namespace SnakeII
 
         public Worm()
         {
-            Console.BackgroundColor = ConsoleColor.Green;
+            Console.BackgroundColor = ConsoleColor.Blue;
             this.sign = '*';
             this.points.Add(new Point(20, 4));
         }
@@ -29,7 +29,7 @@ namespace SnakeII
         {
             while (true)
             {
-        //        Console.BackgroundColor = ConsoleColor.Black;
+                Console.BackgroundColor = ConsoleColor.Black;
                 if (points[0].x + dx < 0) continue;
                 if (points[0].y + dy < 0) continue;
                 if (points[0].x + dx > 40) continue;

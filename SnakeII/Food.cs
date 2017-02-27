@@ -10,9 +10,9 @@ namespace SnakeII
     {
         public Food()
         {
- //           Console.BackgroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.Green;
             this.sign = '@';
-            this.points.Add(new Point(15, 4));
+        //    this.points.Add(new Point(rnd(40, 40), rnd(40,40)));
         }
     }
 }
